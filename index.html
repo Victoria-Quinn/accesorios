@@ -1,163 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Victoria Quinn</title>
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&family=Raleway:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <title>Victoria Quinn</title>
-  <!-- CSS STYLES -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&family=Raleway:wght@600;700&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <section>
+      <div class="container">
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-md navbar-light bg-warning fixed-top">
+          <!-- BRAND -->
+          <a class="navbar-brand" href="index.html">
+            <h1>Victoria Quinn</h1>
+          </a>
+          <!-- BUTTON TOGGLER -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-  <!-- MENÚ DE NAVEGACIÓN -->
-  <section>
-    <div class="container">
-      <!-- NAVIGATION BAR -->
-      <nav class="navbar navbar-expand-md navbar-light bg-warning fixed-top">
-        <!-- BRAND -->
-        <a class="navbar-brand" href="index.html">
-          <h1>Victoria Quinn</h1>
-        </a>
-        <!-- BUTTON TOGGLER -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <!-- ADD A DIV COLLAPSE-->
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <!-- ENLACES -->
+            <ul class="navbar-nav ms-auto">
+              <li class="navbar-item">
+                <a class="nav-link disabled" href="#">Anillos</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link disabled" href="#">Aretes</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="brazaletes_1.html">Brazaletes</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link disabled" href="#">Collares</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link disabled" href="#">Juegos</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link disabled" href="#">Portalentes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- SEPARADOR IMAGEN MODELO -->
+    <section class="model">
+      <div class="imagen-fondo">
+        <img class="d-block w-100" src="images/model.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- FRASE  -->
+    <section class="frase d-flex align-items-center">
+      <div class="container">
+        <em
+          >"La belleza de la mujer se halla iluminada por una luz que nos lleva
+          y convida a contemplar el alma que habita tal cuerpo, y si aquella es
+          tan hermosa como ésta, es imposible no amarla."</em
+        >
+      </div>
+    </section>
+
+    <!-- SEPARADOR CARRUSEL DE IMÁGENES -->
+    <section class="carrusel">
+      <div
+        id="carouselSlides"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <!-- INDICADORES DESPUÉS DE DIV PRINCIPAL ID=carouselSlides -->
+
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselSlides"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSlides"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSlides"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselSlides"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+
+        <!-- IMÁGENES & DESCRIPCIONES (CAPTIONS) -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="img-size d-block w-100"
+              src="images/Anillos.png"
+              alt=""
+            />
+            <!-- CAPTION 1 -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>ANILLOS</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              class="img-size d-block w-100"
+              src="images/Aretes.png"
+              alt=""
+            />
+            <!-- CAPTION 2 -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>ARETES</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              class="img-size d-block w-100"
+              src="images/Collar.png"
+              alt=""
+            />
+            <!-- CAPTION 1 -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>COLLARES</h5>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              class="img-size d-block w-100"
+              src="images/Pulsera.png"
+              alt=""
+            />
+            <!-- CAPTION 1 -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>BRAZALETES</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARRUSEL DENTRO DEL DIV PRINCIPAL ID=carouselSlides -->
+        <!-- IDEA: carousel-control-prev -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselSlides"
+          data-bs-slide="prev"
+        >
+          <!-- IDEA: carousel-control-prev-icon -->
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <!-- IDEA: visually-hidden -->
+          <span class="visually-hidden">Previous</span>
         </button>
 
-        <!-- ADD A DIV COLLAPSE-->
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <!-- ENLACES -->
-          <ul class="navbar-nav ms-auto">
-            <li class="navbar-item">
-              <a class="nav-link disabled" href="#">Anillos</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link disabled" href="#">Aretes</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link" href="brazaletes_1.html">Brazaletes</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link disabled" href="#">Collares</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link disabled" href="#">Juegos</a>
-            </li>
-            <li class="navbar-item">
-              <a class="nav-link disabled" href="#">Portalentes</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </section>
-
-  <!-- SEPARADOR IMAGEN MODELO -->
-  <section class="model">
-    <div class="imagen-fondo">
-      <img class="d-block w-100" src="images/model.jpg" alt="" />
-    </div>
-  </section>
-
-  <!-- FRASE  -->
-  <section class="frase d-flex align-items-center">
-    <div class="container">
-      <em>"La belleza de la mujer se halla iluminada por una luz que nos lleva
-        y convida a contemplar el alma que habita tal cuerpo, y si aquella es
-        tan hermosa como ésta, es imposible no amarla."</em>
-    </div>
-  </section>
-
-  <!-- SEPARADOR CARRUSEL DE IMÁGENES -->
-  <section class="carrusel">
-    <div id="carouselSlides" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
-      <!-- INDICADORES DESPUÉS DE DIV PRINCIPAL ID=carouselSlides -->
-
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselSlides" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <!-- IDEA: carousel-control-next -->
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselSlides"
+          data-bs-slide="next"
+        >
+          <!-- IDEA: carousel-control-prev-icon -->
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <!-- IDEA: visually-hidden -->
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+    </section>
 
-      <!-- IMÁGENES & DESCRIPCIONES (CAPTIONS) -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="img-size d-block w-100" src="images/Anillos.png" alt="" />
-          <!-- CAPTION 1 -->
-          <div class="carousel-caption d-none d-md-block">
-            <h5>ANILLOS</h5>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img class="img-size d-block w-100" src="images/Aretes.png" alt="" />
-          <!-- CAPTION 2 -->
-          <div class="carousel-caption d-none d-md-block">
-            <h5>ARETES</h5>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img class="img-size d-block w-100" src="images/Collar.png" alt="" />
-          <!-- CAPTION 1 -->
-          <div class="carousel-caption d-none d-md-block">
-            <h5>COLLARES</h5>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <img class="img-size d-block w-100" src="images/Pulsera.png" alt="" />
-          <!-- CAPTION 1 -->
-          <div class="carousel-caption d-none d-md-block">
-            <h5>BRAZALETES</h5>
-          </div>
-        </div>
+    <section class="frase d-flex align-items-center">
+      <div class="container">
+        <em
+          >"La belleza no dimana de un cuerpo hermoso, sino de las bellas
+          acciones."</em
+        >
       </div>
+    </section>
 
-      <!-- CARRUSEL DENTRO DEL DIV PRINCIPAL ID=carouselSlides -->
-      <!-- IDEA: carousel-control-prev -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlides" data-bs-slide="prev">
-        <!-- IDEA: carousel-control-prev-icon -->
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <!-- IDEA: visually-hidden -->
-        <span class="visually-hidden">Previous</span>
-      </button>
+    <footer class="bg-light text-center text-lg-start">
+      <!-- Copyright -->
+      <div class="text-center p-3 bg-warning text-gold">
+        Diseños y creaciones: Janett Morales V.
+      </div>
+      <!-- Copyright -->
+    </footer>
 
-      <!-- IDEA: carousel-control-next -->
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselSlides" data-bs-slide="next">
-        <!-- IDEA: carousel-control-prev-icon -->
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <!-- IDEA: visually-hidden -->
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-
-  <section class="frase d-flex align-items-center">
-    <div class="container">
-      <em>"La belleza no dimana de un cuerpo hermoso, sino de las bellas
-        acciones."</em>
-    </div>
-  </section>
-
-  <footer class="bg-light text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3 bg-warning text-gold">
-      Diseños y creaciones: Janett Morales V.
-    </div>
-    <!-- Copyright -->
-  </footer>
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
